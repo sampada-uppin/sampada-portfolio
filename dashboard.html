@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h2>Analytics Dashboard</h2>
+
+<canvas id="chart1"></canvas>
+
+<script>
+new Chart(document.getElementById("chart1"), {
+  type: "bar",
+  data: {
+    labels: ["2019","2020","2021","2022","2023"],
+    datasets: [{
+      label: "Unemployment Rate",
+      data: [5.3,7.9,6.1,4.8,3.9]
+    }]
+  }
+});
+</script>
+
+</body>
+</html>
