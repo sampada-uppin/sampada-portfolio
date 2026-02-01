@@ -2,77 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Data Analyst Portfolio | Sampada</title>
+  <title>Sampada Uppin | Data Analyst Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-  <header>
-    <h1>Sampada Uppin</h1>
-    <p>Data Analyst | Economics | Research | Visualization</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<!-- ================= HEADER ================= -->
+<header class="hero">
+  <h1>Sampada Uppin</h1>
+  <p>Data Analyst • Economics • Research • Visualization</p>
+  <div class="hero-btns">
+    <a href="#projects">View Projects</a>
+    <a href="#contact">Contact Me</a>
+  </div>
+</header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a data analyst with strong foundations in economics, statistics, and
-      behavioral research. I enjoy transforming raw data into insights using
-      Python, SQL, Stata, and visualization tools.
-    </p>
-  </section>
+<!-- ================= NAV ================= -->
+<nav class="navbar">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#dashboard">Dashboard</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div>Python</div>
-      <div>SQL</div>
-      <div>Stata</div>
-      <div>Excel</div>
-      <div>Power BI</div>
-      <div>Tableau</div>
-      <div>Econometrics</div>
-      <div>Data Visualization</div>
-    </div>
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a data analyst with a strong background in economics, statistics, and behavioral research.
+    I enjoy working with large datasets, building models, and communicating insights visually.
+  </p>
+</section>
 
-    <canvas id="skillChart"></canvas>
-  </section>
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <h2>Skills Overview</h2>
+  <div class="skills-grid">
+    <div>Python</div>
+    <div>SQL</div>
+    <div>Stata</div>
+    <div>Excel</div>
+    <div>Power BI</div>
+    <div>Tableau</div>
+    <div>Econometrics</div>
+    <div>Statistics</div>
+    <div>Machine Learning</div>
+    <div>Data Cleaning</div>
+    <div>Visualization</div>
+    <div>Research Writing</div>
+  </div>
+  <canvas id="skillsChart"></canvas>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>📊 Rural Poverty & Subsidies Analysis</h3>
-      <p>Behavioral economics analysis using NSSO data and regression models.</p>
-    </div>
+<!-- ================= DASHBOARD ================= -->
+<section id="dashboard">
+  <h2>Mini Analytics Dashboard</h2>
+  <div class="dashboard-grid">
+    <canvas id="chart1"></canvas>
+    <canvas id="chart2"></canvas>
+    <canvas id="chart3"></canvas>
+  </div>
+</section>
 
-    <div class="project">
-      <h3>📈 Global Financial Crisis (2008)</h3>
-      <p>Public sector role analysis using macroeconomic indicators.</p>
-    </div>
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <h2>Featured Projects</h2>
 
-    <div class="project">
-      <h3>📉 Unemployment Analysis by Religion</h3>
-      <p>India-based microdata analysis using Stata.</p>
-    </div>
-  </section>
+  <div class="project-card">
+    <h3>Rural Poverty & Subsidy Analysis</h3>
+    <p>Regression, behavioral economics, NSSO microdata</p>
+    <span>Tools: Stata, Excel, Python</span>
+  </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: sampada@email.com</p>
-    <p>LinkedIn: linkedin.com/in/sampada</p>
-    <p>GitHub: github.com/sampada</p>
-  </section>
+  <div class="project-card">
+    <h3>Unemployment Analysis by Religion</h3>
+    <p>Microdata analysis, visualization, interpretation</p>
+    <span>Tools: Stata, Power BI</span>
+  </div>
 
-  <footer>
-    <p>© 2026 Sampada Uppin | Data Analyst Portfolio</p>
-  </footer>
+  <div class="project-card">
+    <h3>Global Financial Crisis (2008)</h3>
+    <p>Macro indicators, policy evaluation</p>
+    <span>Tools: Python, Excel</span>
+  </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div>
