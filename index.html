@@ -3,121 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Data Analyst & Economics Enthusiast</title>
+    <title>Your Name - Data Analyst Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <span class="logo-text">Data<span class="highlight">Analyst</span></span>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-chart-bar"></i>
+                <span>Your Name</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact" class="nav-cta">Contact Me</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <button class="mobile-toggle" id="mobileToggle">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        Hello, I'm <span class="highlight">Your Name</span>
-                    </h1>
-                    <h2 class="hero-subtitle">Data Analyst | Economic Planning Enthusiast</h2>
-                    <p class="hero-description">
-                        Transforming data into actionable insights. Aspiring to make a difference through 
-                        data-driven decision making and economic analysis.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <div class="badge">
+                    <i class="fas fa-circle pulse"></i>
+                    Available for Opportunities
+                </div>
+                <h1 class="hero-title">
+                    Data Analyst &
+                    <span class="gradient-text">Economics Enthusiast</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Transforming complex data into actionable insights | Aspiring to help organizations 
+                    make data-driven decisions through economic analysis and statistical modeling
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects</div>
                     </div>
-                    <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Tools Mastered</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Dedication</div>
                     </div>
                 </div>
-                <div class="hero-visual">
-                    <div class="data-card">
-                        <div class="card-header">
-                            <span class="metric-label">Data Insights</span>
-                        </div>
-                        <canvas id="heroChart"></canvas>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#resume" class="btn btn-outline">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+                <div class="social-proof">
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <span></span>
+            <div class="hero-visual">
+                <div class="dashboard-card">
+                    <div class="card-top">
+                        <div class="card-title">Performance Analytics</div>
+                        <div class="card-period">Last 6 Months</div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="performanceChart"></canvas>
+                    </div>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-icon green">
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                            <div class="metric-info">
+                                <div class="metric-value">+24%</div>
+                                <div class="metric-label">Growth</div>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-icon blue">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="metric-info">
+                                <div class="metric-value">15K</div>
+                                <div class="metric-label">Records</div>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-icon purple">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="metric-info">
+                                <div class="metric-value">98%</div>
+                                <div class="metric-label">Accuracy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro">
-                        I'm a passionate data analyst and student dedicated to leveraging data for meaningful impact.
-                    </p>
-                    <p>
-                        Currently pursuing my degree while preparing for competitive examinations, I combine 
-                        analytical rigor with economic thinking to solve real-world problems. My mission is to 
-                        use data analysis and economic planning to help organizations and individuals make better decisions.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-chart-line"></i>
-                            <div>
-                                <h4>Data-Driven</h4>
-                                <p>Making decisions backed by solid analysis</p>
-                            </div>
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-label">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
                         </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-lightbulb"></i>
-                            <div>
-                                <h4>Problem Solver</h4>
-                                <p>Finding innovative solutions to complex challenges</p>
-                            </div>
+                        <div class="floating-card card-1">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Student</span>
                         </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-users"></i>
-                            <div>
-                                <h4>Community Focused</h4>
-                                <p>Committed to helping others through knowledge sharing</p>
-                            </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-book-reader"></i>
+                            <span>Competitive Exams</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <h3 class="stat-number" data-target="10">0</h3>
-                        <p>Projects Completed</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3 class="stat-number" data-target="50">0</h3>
-                        <p>Hours of Analysis</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3 class="stat-number" data-target="5">0</h3>
-                        <p>Tools Mastered</p>
+                <div class="about-content">
+                    <p class="about-lead">
+                        I'm a passionate data analyst and student dedicated to making a meaningful impact 
+                        through data-driven insights and economic analysis.
+                    </p>
+                    <p class="about-text">
+                        Currently pursuing my degree while preparing for competitive examinations, I specialize 
+                        in transforming raw data into strategic insights that drive business decisions. With 
+                        expertise in Python, SQL, Power BI, and statistical analysis, I bring a unique blend 
+                        of technical proficiency and economic thinking to every project.
+                    </p>
+                    <p class="about-text">
+                        My mission is to leverage data analytics and economic planning to help organizations 
+                        and individuals make better, more informed decisions. I'm committed to continuous 
+                        learning and staying updated with the latest industry trends and tools.
+                    </p>
+                    <div class="value-props">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="value-text">
+                                <h4>Analytical Mindset</h4>
+                                <p>Strong problem-solving with data-driven approaches</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="value-text">
+                                <h4>Quick Learner</h4>
+                                <p>Adapting to new tools and technologies rapidly</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="value-text">
+                                <h4>Collaborative</h4>
+                                <p>Team player dedicated to helping others succeed</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,138 +208,133 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-database"></i>
-                        <h3>Data Analysis</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Python (Pandas, NumPy)</span>
-                                <span class="skill-percentage">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Excel & Power BI</span>
-                                <span class="skill-percentage">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>SQL & Database Management</span>
-                                <span class="skill-percentage">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Data Visualization</span>
-                                <span class="skill-percentage">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-chart-pie"></i>
-                        <h3>Economic Planning</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Economic Analysis</span>
-                                <span class="skill-percentage">75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Statistical Modeling</span>
-                                <span class="skill-percentage">70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Policy Research</span>
-                                <span class="skill-percentage">65%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="65"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
+        <div class="section-container">
+            <div class="section-header centered">
+                <span class="section-label">What I'm Good At</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-description">
+                    A comprehensive toolkit for modern data analysis and economic planning
+                </p>
+            </div>
+            
+            <div class="skills-showcase">
+                <!-- Technical Skills -->
+                <div class="skill-group">
+                    <h3 class="skill-group-title">
                         <i class="fas fa-code"></i>
-                        <h3>Technical Skills</h3>
+                        Technical Skills
+                    </h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <div class="skill-icon python">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <p>Pandas, NumPy, Matplotlib</p>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon excel">
+                                <i class="fas fa-file-excel"></i>
+                            </div>
+                            <h4>Excel & Power BI</h4>
+                            <p>Advanced formulas, DAX, visualization</p>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon sql">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>SQL</h4>
+                            <p>MySQL, complex queries, optimization</p>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon tableau">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h4>Data Visualization</h4>
+                            <p>Tableau, interactive dashboards</p>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 85%"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>HTML, CSS, JavaScript</span>
-                                <span class="skill-percentage">80%</span>
+                </div>
+
+                <!-- Analytical Skills -->
+                <div class="skill-group">
+                    <h3 class="skill-group-title">
+                        <i class="fas fa-chart-line"></i>
+                        Analytical Skills
+                    </h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <div class="skill-icon stats">
+                                <i class="fas fa-calculator"></i>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
+                            <h4>Statistical Analysis</h4>
+                            <p>Hypothesis testing, regression</p>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 80%"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Git & Version Control</span>
-                                <span class="skill-percentage">75%</span>
+                        <div class="skill-card">
+                            <div class="skill-icon economics">
+                                <i class="fas fa-chart-pie"></i>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
+                            <h4>Economic Analysis</h4>
+                            <p>Macro/micro trends, forecasting</p>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 75%"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>AWS Cloud Platforms</span>
-                                <span class="skill-percentage">70%</span>
+                        <div class="skill-card">
+                            <div class="skill-icon ml">
+                                <i class="fas fa-brain"></i>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
+                            <h4>Machine Learning</h4>
+                            <p>Classification, clustering basics</p>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon research">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h4>Research & Planning</h4>
+                            <p>Policy analysis, strategic insights</p>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 75%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Tools & Technologies -->
             <div class="tools-section">
-                <h3 class="tools-title">Tools & Technologies</h3>
-                <div class="tools-grid">
-                    <div class="tool-badge">Python</div>
-                    <div class="tool-badge">Excel</div>
-                    <div class="tool-badge">Power BI</div>
-                    <div class="tool-badge">SQL</div>
-                    <div class="tool-badge">STATA</div>
-                    <div class="tool-badge">Tableau</div>
-                    <div class="tool-badge">R</div>
-                    <div class="tool-badge">AWS</div>
+                <h3 class="tools-heading">Tools & Technologies</h3>
+                <div class="tools-container">
+                    <span class="tool-tag">Python</span>
+                    <span class="tool-tag">Excel</span>
+                    <span class="tool-tag">Power BI</span>
+                    <span class="tool-tag">SQL</span>
+                    <span class="tool-tag">Tableau</span>
+                    <span class="tool-tag">STATA</span>
+                    <span class="tool-tag">R Programming</span>
+                    <span class="tool-tag">AWS</span>
+                    <span class="tool-tag">Git</span>
+                    <span class="tool-tag">Jupyter</span>
+                    <span class="tool-tag">Google Analytics</span>
+                    <span class="tool-tag">Statistics</span>
                 </div>
             </div>
         </div>
@@ -265,124 +342,304 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-description">Showcasing my data analysis and economic research work</p>
-            
+        <div class="section-container">
+            <div class="section-header centered">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    Real-world applications of data analysis and economic research
+                </p>
+            </div>
+
             <div class="projects-grid">
-                <div class="project-card">
+                <!-- Project 1 -->
+                <article class="project-card featured">
                     <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link">View Details</a>
+                        <div class="project-bg bg-gradient-1">
+                            <i class="fas fa-chart-line"></i>
                         </div>
+                        <span class="project-badge">Featured</span>
                     </div>
-                    <div class="project-content">
-                        <h3>Economic Trend Analysis</h3>
-                        <p>Analyzed macroeconomic indicators to forecast market trends and provide policy recommendations.</p>
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span class="project-category">Economics</span>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <h3 class="project-title">Economic Trend Analysis Dashboard</h3>
+                        <p class="project-description">
+                            Comprehensive analysis of macroeconomic indicators with predictive modeling 
+                            to forecast market trends. Provided actionable policy recommendations based 
+                            on statistical insights.
+                        </p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
-                            <span class="tag">Statistical Analysis</span>
+                            <span class="tag">Statistical Modeling</span>
                             <span class="tag">Economics</span>
+                            <span class="tag">Forecasting</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="project-link">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="project-icons">
+                                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
+                <!-- Project 2 -->
+                <article class="project-card">
                     <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link">View Details</a>
+                        <div class="project-bg bg-gradient-2">
+                            <i class="fas fa-shopping-cart"></i>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Sales Dashboard & Analytics</h3>
-                        <p>Created interactive Power BI dashboards to visualize sales performance and identify growth opportunities.</p>
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span class="project-category">Business Analytics</span>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <h3 class="project-title">Sales Performance Dashboard</h3>
+                        <p class="project-description">
+                            Interactive Power BI dashboard visualizing sales KPIs, regional performance, 
+                            and identifying growth opportunities through cohort analysis.
+                        </p>
                         <div class="project-tags">
                             <span class="tag">Power BI</span>
-                            <span class="tag">Data Visualization</span>
+                            <span class="tag">DAX</span>
                             <span class="tag">SQL</span>
                         </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link">View Details</a>
+                        <div class="project-footer">
+                            <a href="#" class="project-link">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="project-icons">
+                                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Customer Behavior Analysis</h3>
-                        <p>Performed segmentation analysis to understand customer patterns and improve retention strategies.</p>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-bg bg-gradient-3">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span class="project-category">Customer Analytics</span>
+                            <span class="project-date">2026</span>
+                        </div>
+                        <h3 class="project-title">Customer Segmentation Analysis</h3>
+                        <p class="project-description">
+                            Applied K-means clustering to segment customers based on behavior patterns, 
+                            enabling targeted marketing strategies and improving retention rates.
+                        </p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Machine Learning</span>
                             <span class="tag">Clustering</span>
                         </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link">View Details</a>
+                        <div class="project-footer">
+                            <a href="#" class="project-link">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="project-icons">
+                                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Budget Optimization Tool</h3>
-                        <p>Developed an Excel-based tool for financial planning and resource allocation optimization.</p>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-bg bg-gradient-4">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span class="project-category">Financial Planning</span>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <h3 class="project-title">Budget Optimization Tool</h3>
+                        <p class="project-description">
+                            Excel-based financial planning tool with advanced formulas for resource 
+                            allocation, scenario planning, and budget optimization.
+                        </p>
                         <div class="project-tags">
                             <span class="tag">Excel</span>
                             <span class="tag">Financial Analysis</span>
                             <span class="tag">Optimization</span>
                         </div>
+                        <div class="project-footer">
+                            <a href="#" class="project-link">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="project-icons">
+                                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="section-container">
+            <div class="section-header centered">
+                <span class="section-label">My Journey</span>
+                <h2 class="section-title">Resume & Experience</h2>
+            </div>
+
+            <div class="resume-grid">
+                <!-- Education -->
+                <div class="resume-column">
+                    <h3 class="resume-heading">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2023 - Present</div>
+                                <h4>Bachelor of Computer Applications</h4>
+                                <p class="timeline-institution">Christ University, Bengaluru</p>
+                                <p class="timeline-description">
+                                    Focusing on Data Science, Database Management, and Statistical Analysis
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2024 - Ongoing</div>
+                                <h4>Competitive Exam Preparation</h4>
+                                <p class="timeline-institution">Self-Study</p>
+                                <p class="timeline-description">
+                                    Preparing for government and public sector examinations
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Experience -->
+                <div class="resume-column">
+                    <h3 class="resume-heading">
+                        <i class="fas fa-briefcase"></i>
+                        Experience & Certifications
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2025</div>
+                                <h4>Data Analysis Internship</h4>
+                                <p class="timeline-institution">Seeking Opportunities</p>
+                                <p class="timeline-description">
+                                    Looking for roles in data analysis, business intelligence, and economic research
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2024</div>
+                                <h4>AWS & Cloud Computing</h4>
+                                <p class="timeline-institution">Self-Learning</p>
+                                <p class="timeline-description">
+                                    Hands-on experience with AWS EC2, RDS, S3, and CloudWatch
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-download">
+                <a href="#" class="btn btn-primary btn-large">
+                    <i class="fas fa-download"></i>
+                    <span>Download Full Resume (PDF)</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-description">Let's collaborate on data-driven solutions</p>
-            
-            <div class="contact-content">
+        <div class="section-container">
+            <div class="section-header centered">
+                <span class="section-label">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    I'm always open to discussing data analysis projects, economic research, or collaboration opportunities
+                </p>
+            </div>
+
+            <div class="contact-wrapper">
                 <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>your.email@example.com</p>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
+                        <h4>Email</h4>
+                        <p>your.email@example.com</p>
+                        <a href="mailto:your.email@example.com">Send Email</a>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Bengaluru, Karnataka, India</p>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
+                        <h4>Location</h4>
+                        <p>Bengaluru, Karnataka</p>
+                        <p>India</p>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-graduation-cap"></i>
-                        <div>
-                            <h4>Education</h4>
-                            <p>Student | Competitive Exam Aspirant</p>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
                         </div>
+                        <h4>LinkedIn</h4>
+                        <p>Connect with me</p>
+                        <a href="#">View Profile</a>
                     </div>
                 </div>
 
                 <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
+                    <h3>Send Me a Message</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
                 </form>
             </div>
         </div>
@@ -390,14 +647,39 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Data Analyst Portfolio. Built with passion for data and innovation.</p>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Your Name</span>
+                    </div>
+                    <p>Data Analyst | Economics Enthusiast | Problem Solver</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Portfolio</h4>
+                        <a href="#projects">Projects</a>
+                        <a href="#resume">Resume</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Your Name. All rights reserved.</p>
+                <p>Built with dedication to data and design</p>
             </div>
         </div>
     </footer>
