@@ -1,56 +1,78 @@
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: #0f172a;
+  font-family: 'Inter', sans-serif;
+  background: #020617;
   color: #e5e7eb;
 }
 
-header {
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #020617, #0f172a);
+}
+
+.hero-btns a {
+  margin: 10px;
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
   background: #020617;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
 }
 
-nav a {
-  margin: 0 15px;
+.navbar a {
+  margin: 0 12px;
   color: #38bdf8;
   text-decoration: none;
 }
 
 section {
-  padding: 50px 10%;
+  padding: 80px 10%;
 }
 
-h2 {
-  border-left: 5px solid #38bdf8;
-  padding-left: 10px;
-}
-
-.skills-grid {
+.skills-grid, .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 15px;
-  margin-bottom: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
 }
 
-.skills-grid div {
-  background: #1e293b;
-  padding: 15px;
-  text-align: center;
-  border-radius: 8px;
-}
-
-.project {
-  background: #1e293b;
+.project-card {
+  background: #0f172a;
   padding: 20px;
-  margin: 15px 0;
   border-left: 5px solid #38bdf8;
-  border-radius: 8px;
+  margin: 20px 0;
 }
 
-footer {
+.timeline div {
+  margin: 20px 0;
+  padding: 20px;
+  background: #0f172a;
+  border-left: 4px solid #22d3ee;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
   background: #020617;
-  text-align: center;
-  padding: 15px;
-  color: #94a3b8;
+  border: 1px solid #38bdf8;
+  color: white;
+}
+
+button {
+  padding: 12px 25px;
+  background: #38bdf8;
+  border: none;
+  cursor: pointer;
 }
