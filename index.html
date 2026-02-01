@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Data Analyst Portfolio</title>
+    <title>Your Name - Data Analyst Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@300;400;500;700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
     <!-- Animated Background -->
-    <div class="animated-bg">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-        <div class="mesh-gradient"></div>
+    <div class="bg-animation">
+        <div class="gradient-bg"></div>
+        <div class="floating-shapes">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+        </div>
     </div>
 
     <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-wrapper">
-            <a href="#home" class="brand">
-                <div class="brand-icon">
-                    <i class="fas fa-chart-network"></i>
-                </div>
-                <span class="brand-text">DataViz Pro</span>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-box">DA</span>
+                <span class="logo-text">DataPro</span>
             </a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-item active">Home</a></li>
-                <li><a href="#about" class="nav-item">About</a></li>
-                <li><a href="#skills" class="nav-item">Skills</a></li>
-                <li><a href="#projects" class="nav-item">Projects</a></li>
-                <li><a href="#contact" class="nav-item nav-cta">Let's Talk</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="contact-btn">Let's Talk</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -45,183 +46,143 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container hero-grid">
-            <div class="hero-left">
-                <div class="status-badge">
-                    <span class="status-dot"></span>
-                    <span>Available for Hire</span>
-                </div>
-                <h1 class="hero-heading">
-                    Turning Data Into
-                    <span class="highlight-text">Actionable Insights</span>
-                </h1>
-                <p class="hero-desc">
-                    I'm a Data Analyst & Economics Enthusiast specializing in transforming complex datasets 
-                    into strategic business decisions. Passionate about solving real-world problems through 
-                    statistical analysis and economic planning.
-                </p>
-                <div class="hero-stats-row">
-                    <div class="stat-box">
-                        <h3>15+</h3>
-                        <p>Projects Completed</p>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-left" data-aos="fade-right">
+                    <div class="tag">
+                        <span class="dot"></span>
+                        Open to Opportunities
                     </div>
-                    <div class="stat-box">
-                        <h3>8+</h3>
-                        <p>Tools Mastered</p>
+                    <h1 class="main-title">
+                        Hi, I'm a
+                        <span class="typed-text">Data Analyst</span>
+                    </h1>
+                    <h2 class="subtitle">Transforming Data into Strategic Insights</h2>
+                    <p class="description">
+                        I specialize in turning complex datasets into actionable business intelligence 
+                        using Python, SQL, Excel, Power BI, and statistical analysis. Passionate about 
+                        economic planning and helping organizations make data-driven decisions.
+                    </p>
+                    <div class="button-group">
+                        <a href="#projects" class="btn-primary">
+                            <span>Explore Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn-secondary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Contact Me</span>
+                        </a>
                     </div>
-                    <div class="stat-box">
-                        <h3>100%</h3>
-                        <p>Client Satisfaction</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn-primary">
-                        <span>Explore My Work</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#contact" class="btn-secondary">
-                        <i class="fas fa-paper-plane"></i>
-                        <span>Get In Touch</span>
-                    </a>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-btn"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-            <div class="hero-right">
-                <div class="visual-card">
-                    <div class="card-header">
-                        <div class="header-left">
-                            <h4>Analytics Dashboard</h4>
-                            <p>Real-time Performance</p>
-                        </div>
-                        <div class="header-right">
-                            <span class="trend-up">
-                                <i class="fas fa-arrow-trend-up"></i> +24%
+                
+                <div class="hero-right" data-aos="fade-left">
+                    <div class="dashboard-card">
+                        <div class="card-top">
+                            <div>
+                                <h3>Performance Dashboard</h3>
+                                <p>Last 6 Months</p>
+                            </div>
+                            <span class="trend">
+                                <i class="fas fa-trending-up"></i> +24%
                             </span>
                         </div>
-                    </div>
-                    <div class="chart-area">
-                        <canvas id="mainChart"></canvas>
-                    </div>
-                    <div class="metrics-grid">
-                        <div class="metric-card purple">
-                            <div class="metric-icon">
-                                <i class="fas fa-chart-line"></i>
+                        <canvas id="heroChart"></canvas>
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <div class="icon purple"><i class="fas fa-chart-line"></i></div>
+                                <div>
+                                    <h4>98%</h4>
+                                    <p>Accuracy</p>
+                                </div>
                             </div>
-                            <div class="metric-content">
-                                <span class="metric-value">98%</span>
-                                <span class="metric-label">Accuracy</span>
+                            <div class="stat-item">
+                                <div class="icon blue"><i class="fas fa-database"></i></div>
+                                <div>
+                                    <h4>50K+</h4>
+                                    <p>Records</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="metric-card blue">
-                            <div class="metric-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <div class="metric-content">
-                                <span class="metric-value">50K+</span>
-                                <span class="metric-label">Records</span>
-                            </div>
-                        </div>
-                        <div class="metric-card orange">
-                            <div class="metric-icon">
-                                <i class="fas fa-bolt"></i>
-                            </div>
-                            <div class="metric-content">
-                                <span class="metric-value">Fast</span>
-                                <span class="metric-label">Analysis</span>
+                            <div class="stat-item">
+                                <div class="icon orange"><i class="fas fa-bolt"></i></div>
+                                <div>
+                                    <h4>Fast</h4>
+                                    <p>Delivery</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-hint">
+        <div class="scroll-down">
             <span>Scroll Down</span>
-            <div class="scroll-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section about-section">
+    <section id="about" class="about">
         <div class="container">
-            <div class="section-head">
-                <span class="section-tag">Who I Am</span>
+            <div class="section-header">
+                <span class="label">WHO I AM</span>
                 <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">
-                    Passionate about data, driven by results
-                </p>
+                <div class="title-line"></div>
             </div>
+            
             <div class="about-content">
-                <div class="about-left">
-                    <div class="profile-card">
-                        <div class="profile-image">
+                <div class="about-left" data-aos="fade-right">
+                    <div class="profile-box">
+                        <div class="profile-img">
                             <i class="fas fa-user-tie"></i>
                         </div>
-                        <div class="profile-badges">
-                            <div class="badge-item">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span>BCA Student</span>
-                            </div>
-                            <div class="badge-item">
-                                <i class="fas fa-trophy"></i>
-                                <span>Competitive Exams</span>
-                            </div>
-                            <div class="badge-item">
-                                <i class="fas fa-briefcase"></i>
-                                <span>Data Analyst</span>
-                            </div>
+                        <div class="badges">
+                            <span><i class="fas fa-graduation-cap"></i> BCA Student</span>
+                            <span><i class="fas fa-trophy"></i> Competitive Exams</span>
+                            <span><i class="fas fa-briefcase"></i> Data Analyst</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-right">
-                    <h3 class="about-heading">
-                        Transforming Data into Strategic Business Solutions
-                    </h3>
-                    <p class="about-text">
-                        I'm a passionate data analyst currently pursuing my Bachelor's degree while preparing 
-                        for competitive examinations. With a strong foundation in Python, SQL, Excel, and Power BI, 
-                        I specialize in uncovering patterns and trends that drive business growth.
+                
+                <div class="about-right" data-aos="fade-left">
+                    <h3>Passionate About Data-Driven Solutions</h3>
+                    <p>
+                        I'm a dedicated data analyst and student currently pursuing my Bachelor's degree 
+                        while preparing for competitive examinations. With strong expertise in Python, SQL, 
+                        Excel, and Power BI, I transform raw data into meaningful insights that drive business growth.
                     </p>
-                    <p class="about-text">
-                        My expertise lies in combining technical analytical skills with economic planning to deliver 
-                        comprehensive insights. I'm committed to helping organizations make data-driven decisions 
-                        and continuously expanding my knowledge in machine learning and advanced analytics.
+                    <p>
+                        My approach combines technical analytical skills with economic planning principles 
+                        to deliver comprehensive, actionable recommendations. I'm committed to continuous 
+                        learning and helping organizations leverage data for strategic decision-making.
                     </p>
-                    <div class="value-grid">
-                        <div class="value-box">
-                            <div class="value-icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
+                    
+                    <div class="features">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-brain"></i></div>
                             <h4>Analytical Thinking</h4>
-                            <p>Strong problem-solving with data-driven methodologies</p>
+                            <p>Strong problem-solving with data</p>
                         </div>
-                        <div class="value-box">
-                            <div class="value-icon">
-                                <i class="fas fa-rocket"></i>
-                            </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-rocket"></i></div>
                             <h4>Quick Learner</h4>
-                            <p>Rapidly adapting to new tools and technologies</p>
+                            <p>Rapid adaptation to new tools</p>
                         </div>
-                        <div class="value-box">
-                            <div class="value-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-users"></i></div>
                             <h4>Team Player</h4>
-                            <p>Collaborative mindset focused on collective success</p>
+                            <p>Collaborative and supportive</p>
                         </div>
-                        <div class="value-box">
-                            <div class="value-icon">
-                                <i class="fas fa-heart"></i>
-                            </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-heart"></i></div>
                             <h4>Passionate</h4>
-                            <p>Dedicated to making impact through data insights</p>
+                            <p>Dedicated to excellence</p>
                         </div>
                     </div>
                 </div>
@@ -230,226 +191,164 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section skills-section">
+    <section id="skills" class="skills">
         <div class="container">
-            <div class="section-head">
-                <span class="section-tag">My Expertise</span>
+            <div class="section-header">
+                <span class="label">MY EXPERTISE</span>
                 <h2 class="section-title">Skills & Technologies</h2>
-                <p class="section-subtitle">
-                    A comprehensive toolkit for modern data analysis
-                </p>
+                <div class="title-line"></div>
             </div>
             
-            <div class="skills-container">
+            <div class="skills-grid">
                 <!-- Technical Skills -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
+                <div class="skill-group" data-aos="fade-up">
+                    <div class="group-header">
+                        <i class="fas fa-laptop-code"></i>
                         <h3>Technical Skills</h3>
                     </div>
-                    <div class="skill-list">
-                        <div class="skill-box">
-                            <div class="skill-info">
-                                <div class="skill-name">
-                                    <i class="fab fa-python"></i>
-                                    <span>Python</span>
-                                </div>
-                                <span class="skill-percent">90%</span>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-top">
+                                <span><i class="fab fa-python"></i> Python</span>
+                                <span class="percent">90%</span>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--width: 90%"></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--width: 90%"></div>
                             </div>
                         </div>
-                        <div class="skill-box">
-                            <div class="skill-info">
-                                <div class="skill-name">
-                                    <i class="fas fa-table"></i>
-                                    <span>Excel & Power BI</span>
-                                </div>
-                                <span class="skill-percent">95%</span>
+                        <div class="skill-item">
+                            <div class="skill-top">
+                                <span><i class="fas fa-file-excel"></i> Excel & Power BI</span>
+                                <span class="percent">95%</span>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--width: 95%"></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--width: 95%"></div>
                             </div>
                         </div>
-                        <div class="skill-box">
-                            <div class="skill-info">
-                                <div class="skill-name">
-                                    <i class="fas fa-database"></i>
-                                    <span>SQL & Database</span>
-                                </div>
-                                <span class="skill-percent">85%</span>
+                        <div class="skill-item">
+                            <div class="skill-top">
+                                <span><i class="fas fa-database"></i> SQL</span>
+                                <span class="percent">85%</span>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--width: 85%"></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--width: 85%"></div>
                             </div>
                         </div>
-                        <div class="skill-box">
-                            <div class="skill-info">
-                                <div class="skill-name">
-                                    <i class="fas fa-chart-area"></i>
-                                    <span>Data Visualization</span>
-                                </div>
-                                <span class="skill-percent">88%</span>
+                        <div class="skill-item">
+                            <div class="skill-top">
+                                <span><i class="fas fa-chart-bar"></i> Data Visualization</span>
+                                <span class="percent">88%</span>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--width: 88%"></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--width: 88%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Analytics Skills -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-chart-pie"></i>
-                        </div>
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="group-header">
+                        <i class="fas fa-chart-pie"></i>
                         <h3>Analytics & Economics</h3>
                     </div>
-                    <div class="skill-list">
-                        <div class="skill-box">
-                            <div class="skill-info">
-                                <div class="skill-name">
-                                    <i class="fas fa-calculator"></i>
-                                    <span>Statistical Analysis</span>
-                                </div>
-                                <span class="skill-percent">85%</span>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-top">
+                                <span><i class="fas fa-calculator"></i> Statistical Analysis</span>
+                                <span class="percent">85%</span>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--width: 85%"></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--width: 85%"></div>
                             </div>
                         </div>
-                        <div class="skill-box">
-                            <div class="skill-info">
-                                <div class="skill-name">
-                                    <i class="fas fa-coins"></i>
-                                    <span>Economic Planning</span>
-                                </div>
-                                <span class="skill-percent">80%</span>
+                        <div class="skill-item">
+                            <div class="skill-top">
+                                <span><i class="fas fa-coins"></i> Economic Planning</span>
+                                <span class="percent">80%</span>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--width: 80%"></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--width: 80%"></div>
                             </div>
                         </div>
-                        <div class="skill-box">
-                            <div class="skill-info">
-                                <div class="skill-name">
-                                    <i class="fas fa-brain"></i>
-                                    <span>Machine Learning</span>
-                                </div>
-                                <span class="skill-percent">75%</span>
+                        <div class="skill-item">
+                            <div class="skill-top">
+                                <span><i class="fas fa-brain"></i> Machine Learning</span>
+                                <span class="percent">75%</span>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--width: 75%"></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--width: 75%"></div>
                             </div>
                         </div>
-                        <div class="skill-box">
-                            <div class="skill-info">
-                                <div class="skill-name">
-                                    <i class="fas fa-search-dollar"></i>
-                                    <span>Business Intelligence</span>
-                                </div>
-                                <span class="skill-percent">82%</span>
+                        <div class="skill-item">
+                            <div class="skill-top">
+                                <span><i class="fas fa-lightbulb"></i> Business Intelligence</span>
+                                <span class="percent">82%</span>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--width: 82%"></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--width: 82%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Tools & Technologies -->
-            <div class="tools-showcase">
-                <h3 class="tools-title">Tools & Technologies I Use</h3>
+            <!-- Tools -->
+            <div class="tools-section" data-aos="fade-up" data-aos-delay="200">
+                <h3>Tools & Technologies</h3>
                 <div class="tools-grid">
-                    <div class="tool-item">
-                        <i class="fab fa-python"></i>
-                        <span>Python</span>
-                    </div>
-                    <div class="tool-item">
-                        <i class="fas fa-file-excel"></i>
-                        <span>Excel</span>
-                    </div>
-                    <div class="tool-item">
-                        <i class="fas fa-chart-bar"></i>
-                        <span>Power BI</span>
-                    </div>
-                    <div class="tool-item">
-                        <i class="fas fa-database"></i>
-                        <span>SQL</span>
-                    </div>
-                    <div class="tool-item">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Tableau</span>
-                    </div>
-                    <div class="tool-item">
-                        <i class="fab fa-r-project"></i>
-                        <span>R</span>
-                    </div>
-                    <div class="tool-item">
-                        <i class="fab fa-aws"></i>
-                        <span>AWS</span>
-                    </div>
-                    <div class="tool-item">
-                        <i class="fab fa-github"></i>
-                        <span>Git</span>
-                    </div>
-                    <div class="tool-item">
-                        <i class="fas fa-brain"></i>
-                        <span>STATA</span>
-                    </div>
-                    <div class="tool-item">
-                        <i class="fas fa-project-diagram"></i>
-                        <span>Jupyter</span>
-                    </div>
+                    <div class="tool"><i class="fab fa-python"></i> Python</div>
+                    <div class="tool"><i class="fas fa-table"></i> Excel</div>
+                    <div class="tool"><i class="fas fa-chart-bar"></i> Power BI</div>
+                    <div class="tool"><i class="fas fa-database"></i> SQL</div>
+                    <div class="tool"><i class="fas fa-chart-line"></i> Tableau</div>
+                    <div class="tool"><i class="fab fa-r-project"></i> R</div>
+                    <div class="tool"><i class="fab fa-aws"></i> AWS</div>
+                    <div class="tool"><i class="fab fa-git-alt"></i> Git</div>
+                    <div class="tool"><i class="fas fa-project-diagram"></i> STATA</div>
+                    <div class="tool"><i class="fas fa-book"></i> Jupyter</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section projects-section">
+    <section id="projects" class="projects">
         <div class="container">
-            <div class="section-head">
-                <span class="section-tag">Portfolio</span>
+            <div class="section-header">
+                <span class="label">MY WORK</span>
                 <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">
-                    Real-world data analysis and economic research projects
-                </p>
+                <div class="title-line"></div>
             </div>
-
+            
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="project-item featured">
-                    <div class="project-visual gradient-purple">
+                <div class="project-card featured" data-aos="zoom-in">
+                    <div class="project-img bg-purple">
                         <i class="fas fa-chart-line"></i>
-                        <span class="project-tag">Featured</span>
+                        <span class="featured-badge">Featured</span>
                     </div>
-                    <div class="project-info">
-                        <div class="project-meta">
+                    <div class="project-content">
+                        <div class="project-header">
                             <span class="category">Economics</span>
                             <span class="year">2026</span>
                         </div>
-                        <h3 class="project-name">Economic Trend Analysis Dashboard</h3>
-                        <p class="project-desc">
-                            Comprehensive macroeconomic analysis with predictive modeling to forecast market 
-                            trends. Built interactive dashboards and provided data-driven policy recommendations.
+                        <h3>Economic Trend Analysis Dashboard</h3>
+                        <p>
+                            Comprehensive macroeconomic analysis using predictive modeling to forecast 
+                            market trends and provide data-driven policy recommendations.
                         </p>
-                        <div class="project-tags">
+                        <div class="tags">
                             <span>Python</span>
                             <span>Statistics</span>
                             <span>Forecasting</span>
                             <span>Economics</span>
                         </div>
                         <div class="project-footer">
-                            <a href="#" class="project-link">
+                            <a href="#" class="view-link">
                                 View Project <i class="fas fa-arrow-right"></i>
                             </a>
-                            <div class="project-actions">
+                            <div class="links">
                                 <a href="#"><i class="fab fa-github"></i></a>
                                 <a href="#"><i class="fas fa-external-link-alt"></i></a>
                             </div>
@@ -458,30 +357,30 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-item">
-                    <div class="project-visual gradient-blue">
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-img bg-blue">
                         <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <div class="project-info">
-                        <div class="project-meta">
+                    <div class="project-content">
+                        <div class="project-header">
                             <span class="category">Business Analytics</span>
                             <span class="year">2025</span>
                         </div>
-                        <h3 class="project-name">Sales Performance Dashboard</h3>
-                        <p class="project-desc">
-                            Interactive Power BI dashboard analyzing sales KPIs, regional performance, 
+                        <h3>Sales Performance Dashboard</h3>
+                        <p>
+                            Interactive Power BI dashboard analyzing KPIs, regional performance, 
                             and customer behavior patterns.
                         </p>
-                        <div class="project-tags">
+                        <div class="tags">
                             <span>Power BI</span>
                             <span>DAX</span>
                             <span>SQL</span>
                         </div>
                         <div class="project-footer">
-                            <a href="#" class="project-link">
+                            <a href="#" class="view-link">
                                 View Project <i class="fas fa-arrow-right"></i>
                             </a>
-                            <div class="project-actions">
+                            <div class="links">
                                 <a href="#"><i class="fab fa-github"></i></a>
                                 <a href="#"><i class="fas fa-external-link-alt"></i></a>
                             </div>
@@ -490,30 +389,30 @@
                 </div>
 
                 <!-- Project 3 -->
-                <div class="project-item">
-                    <div class="project-visual gradient-green">
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-img bg-green">
                         <i class="fas fa-users"></i>
                     </div>
-                    <div class="project-info">
-                        <div class="project-meta">
+                    <div class="project-content">
+                        <div class="project-header">
                             <span class="category">ML & Analytics</span>
                             <span class="year">2026</span>
                         </div>
-                        <h3 class="project-name">Customer Segmentation Analysis</h3>
-                        <p class="project-desc">
-                            Applied K-means clustering to segment customers based on purchasing behavior 
-                            and engagement metrics.
+                        <h3>Customer Segmentation</h3>
+                        <p>
+                            Applied K-means clustering to segment customers based on behavior 
+                            patterns for targeted marketing.
                         </p>
-                        <div class="project-tags">
+                        <div class="tags">
                             <span>Python</span>
                             <span>ML</span>
                             <span>Clustering</span>
                         </div>
                         <div class="project-footer">
-                            <a href="#" class="project-link">
+                            <a href="#" class="view-link">
                                 View Project <i class="fas fa-arrow-right"></i>
                             </a>
-                            <div class="project-actions">
+                            <div class="links">
                                 <a href="#"><i class="fab fa-github"></i></a>
                                 <a href="#"><i class="fas fa-external-link-alt"></i></a>
                             </div>
@@ -522,30 +421,30 @@
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-item">
-                    <div class="project-visual gradient-orange">
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-img bg-orange">
                         <i class="fas fa-money-bill-wave"></i>
                     </div>
-                    <div class="project-info">
-                        <div class="project-meta">
+                    <div class="project-content">
+                        <div class="project-header">
                             <span class="category">Financial Planning</span>
                             <span class="year">2025</span>
                         </div>
-                        <h3 class="project-name">Budget Optimization Tool</h3>
-                        <p class="project-desc">
-                            Excel-based financial planning tool with advanced formulas for resource 
-                            allocation and scenario analysis.
+                        <h3>Budget Optimization Tool</h3>
+                        <p>
+                            Excel-based financial planning tool with advanced formulas for 
+                            resource allocation and scenario analysis.
                         </p>
-                        <div class="project-tags">
+                        <div class="tags">
                             <span>Excel</span>
                             <span>Finance</span>
                             <span>Planning</span>
                         </div>
                         <div class="project-footer">
-                            <a href="#" class="project-link">
+                            <a href="#" class="view-link">
                                 View Project <i class="fas fa-arrow-right"></i>
                             </a>
-                            <div class="project-actions">
+                            <div class="links">
                                 <a href="#"><i class="fab fa-github"></i></a>
                                 <a href="#"><i class="fas fa-external-link-alt"></i></a>
                             </div>
@@ -557,66 +456,58 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="section-head">
-                <span class="section-tag">Get In Touch</span>
+            <div class="section-header">
+                <span class="label">GET IN TOUCH</span>
                 <h2 class="section-title">Let's Work Together</h2>
-                <p class="section-subtitle">
-                    Have a project in mind? Let's discuss how data can drive your success
-                </p>
+                <div class="title-line"></div>
             </div>
-
-            <div class="contact-container">
-                <div class="contact-left">
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h4>Email Me</h4>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <h4>Email</h4>
                         <p>your.email@example.com</p>
-                        <a href="mailto:your.email@example.com" class="contact-btn">Send Email</a>
+                        <a href="mailto:your.email@example.com">Send Email</a>
                     </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <h4>Location</h4>
                         <p>Bengaluru, Karnataka</p>
                         <p>India</p>
                     </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fab fa-linkedin-in"></i></div>
                         <h4>LinkedIn</h4>
                         <p>Connect with me</p>
-                        <a href="#" class="contact-btn">View Profile</a>
+                        <a href="#">View Profile</a>
                     </div>
                 </div>
-
-                <form class="contact-form" id="contactForm">
+                
+                <form class="contact-form" data-aos="fade-left">
                     <h3>Send a Message</h3>
-                    <div class="form-grid">
-                        <div class="input-group">
-                            <label>Your Name</label>
-                            <input type="text" name="name" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" required>
                         </div>
-                        <div class="input-group">
-                            <label>Your Email</label>
-                            <input type="email" name="email" required>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" required>
                         </div>
                     </div>
-                    <div class="input-group">
+                    <div class="form-group">
                         <label>Subject</label>
-                        <input type="text" name="subject" required>
+                        <input type="text" required>
                     </div>
-                    <div class="input-group">
+                    <div class="form-group">
                         <label>Message</label>
-                        <textarea name="message" rows="5" required></textarea>
+                        <textarea rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn-primary">
-                        <span>Send Message</span>
+                        Send Message
                         <i class="fas fa-paper-plane"></i>
                     </button>
                 </form>
@@ -628,15 +519,13 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="brand">
-                        <div class="brand-icon">
-                            <i class="fas fa-chart-network"></i>
-                        </div>
-                        <span class="brand-text">DataViz Pro</span>
+                <div class="footer-left">
+                    <div class="logo">
+                        <span class="logo-box">DA</span>
+                        <span class="logo-text">DataPro</span>
                     </div>
-                    <p>Turning data into strategic insights for better decision-making</p>
-                    <div class="footer-socials">
+                    <p>Transforming data into strategic insights for better decision-making</p>
+                    <div class="footer-social">
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#"><i class="fab fa-github"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -644,13 +533,13 @@
                     </div>
                 </div>
                 <div class="footer-links">
-                    <div class="footer-col">
+                    <div>
                         <h4>Quick Links</h4>
                         <a href="#home">Home</a>
                         <a href="#about">About</a>
                         <a href="#skills">Skills</a>
                     </div>
-                    <div class="footer-col">
+                    <div>
                         <h4>Portfolio</h4>
                         <a href="#projects">Projects</a>
                         <a href="#contact">Contact</a>
@@ -659,7 +548,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 DataViz Pro. Crafted with passion for data and design.</p>
+                <p>&copy; 2026 DataPro. Crafted with passion and precision.</p>
             </div>
         </div>
     </footer>
