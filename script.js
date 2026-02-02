@@ -18,9 +18,3 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.5 });
 
 skillBars.forEach(bar => observer.observe(bar));
-
-document.getElementById('contactForm').addEventListener('submit', e => {
-    e.preventDefault();
-    alert('Message sent! (Demo - connect to backend for real functionality)');
-    e.target.reset();
-});
