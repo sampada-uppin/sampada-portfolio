@@ -1,74 +1,48 @@
-// Smooth scrolling for navigation
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Portfolio | Behavioral Economics & Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">📊 Portfolio</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-// Animated data visualization canvas
-const canvas = document.getElementById('dataCanvas');
-const ctx = canvas.getContext('2d');
-
-canvas.width = canvas.offsetWidth;
-canvas.height = canvas.offsetHeight;
-
-// Data points for animated chart
-class DataPoint {
-    constructor(x, y, radius, color) {
-        this.x = x;
-        this.y = y;
-        this.radius = radius;
-        this.color = color;
-        this.vx = (Math.random() - 0.5) * 2;
-        this.vy = (Math.random() - 0.5) * 2;
-    }
-
-    draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = this.color;
-        ctx.fill();
-
-        // Glow effect
-        ctx.shadowBlur = 15;
-        ctx.shadowColor = this.color;
-        ctx.fill();
-        ctx.shadowBlur = 0;
-    }
-
-    update() {
-        if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
-            this.vx = -this.vx;
-        }
-        if (this.y + this.radius > canvas.height || this.y - this.radius < 0) {
-            this.vy = -this.vy;
-        }
-
-        this.x += this.vx;
-        this.y += this.vy;
-        this.draw();
-    }
-}
-
-// Create data points
-const dataPoints = [];
-const colors = ['#00d9ff', '#bd00ff', '#ff006e', '#4facfe', '#f5576c'];
-
-for (let i = 0; i < 50; i++) {
-    const x = Math.random() * canvas.width;
-    const y = Math.random() * canvas.height;
-    const radius = Math.random() * 3 + 1;
-    const color = colors[Math.floor(Math.random() * colors.length)];
-    dataPoints.push(new DataPoint(x, y, radius, color));
-}
-
-// Animation loop
-function animate() {
-   
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div>
+                <h1>Data-Driven Insights</h1>
+                <h2>Aspiring Economist | Behavioral Data Analyst</h2>
+                <p>Transforming complex data into actionable insights through the lens of behavioral economics and psychological analysis.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Analytics Tools</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Data-Driven</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Insights Generated</s
