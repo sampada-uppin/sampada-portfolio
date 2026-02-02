@@ -418,95 +418,48 @@ section {
     border: 1px solid rgba(0, 217, 255, 0.3);
 }
 
-.contact-grid {
+/* Contact Section - Updated */
+.contact-methods-center {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
     margin: 0 auto;
-}
-
-.contact-info h3 {
-    font-size: 2rem;
-    color: #00d9ff;
-    margin-bottom: 1.5rem;
-}
-
-.contact-info p {
-    color: #8892b0;
-    margin-bottom: 2.5rem;
-    line-height: 1.8;
-}
-
-.contact-methods {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    padding: 1.5rem;
+    padding: 2rem;
     background: #1a1f3a;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 2px solid rgba(0, 217, 255, 0.1);
     transition: all 0.3s;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .contact-item:hover {
     border-color: #00d9ff;
-    transform: translateX(10px);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 217, 255, 0.3);
 }
 
 .contact-icon {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    flex-shrink: 0;
 }
 
-.contact-item a {
-    color: #e0e6ff;
-    text-decoration: none;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    color: #e0e6ff;
+.contact-details h4 {
+    color: #00d9ff;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    font-weight: 500;
 }
 
-.contact-form input,
-.contact-form textarea {
-    padding: 1rem;
-    background: #1a1f3a;
-    border: 2px solid rgba(0, 217, 255, 0.1);
-    border-radius: 8px;
-    color: #e0e6ff;
-    font-size: 1rem;
-    font-family: inherit;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #00d9ff;
-    box-shadow: 0 0 20px rgba(0, 217, 255, 0.2);
-}
-
-.contact-form textarea {
-    resize: vertical;
-    min-height: 150px;
+.contact-details p {
+    color: #8892b0;
+    font-size: 0.95rem;
 }
 
 footer {
@@ -533,10 +486,13 @@ footer p {
 }
 
 @media (max-width: 968px) {
-    .hero .container, .contact-grid {
+    .hero .container {
         grid-template-columns: 1fr;
     }
     .focus-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-methods-center {
         grid-template-columns: 1fr;
     }
     nav ul {
